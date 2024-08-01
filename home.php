@@ -67,6 +67,10 @@
                             <a href="https://github.com/Lynxguerba">
                                 <img src="icons/github.png" alt="homeIcon">
                             </a>
+                            <span style="width: 10px"></span>
+                            <a href="https://www.w3profile.com/guerba-dinno" target="_blank" >
+                                <img src="icons/w3s.png" alt="homeIcon" style="width: 35px; height: 35px; transform: translateY(6px)">
+                            </a>
                         </div>
                         <div style="height: 25px"></div>
                         <div class="d-flex justify-content-center">
