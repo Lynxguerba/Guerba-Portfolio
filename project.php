@@ -1,5 +1,11 @@
-<style>
+<script src="../assets/js/color-modes.js"></script>
+<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
+
+<style>
 
     .proj {
         padding: 40px;
@@ -37,23 +43,41 @@
         padding: 10px;
     }
     .proj_detials {
-        padding: 5px;
         background: #212429;
-        outline: 2px solid #dddddd;
+        padding: 2px;
         border-radius: 5px;
         display: grid;
         justify-content: center;
         overflow: hidden;
-        height: 200px;
-        width: 400px;
+        height: 400px;
+        width: 430px;
         transition: 0.2s;
+        border-radius: 10px;
     }
     .proj_detials:hover {
-        box-shadow: 2px 2px 20px #0a95b8;
+        box-shadow: 0 0 2px  #dddddd;
     }
     .proj_detials img {
-        height: 190px;
+        width: 600px;
+        height: 230px;
+        border: 1px solid white;
+        
     }
+
+    .main_projects {
+        background: #2b3034;
+        
+    }
+   .proj_content{
+       padding-left: 20px;
+       padding-left: 20px;
+       padding-bottom: 10px;
+       width: 100%;
+   }
+   *{
+       
+       
+   }
 </style>
 <div class="projects">
     <div id="projects" style="height:80px"></div>
@@ -85,65 +109,116 @@
                     </a>
                 </div>
             </div>
-            
+
         </div>
 
-        <div class="row container_projects justify-content-center reveal">
-            <h3 class="text-light mt-5 fw-bold text-center">Here are some of my Works!</h3>
-            <div class="col-12 col-md-4 mx-3 mt-4 proj_detials">
-                <a href="http://nyanchat.great-site.net/src/frontend/login.php" class="image-container" target="_blank">
-                    <img src="images/nyan.png" alt="proj_img" class="img-fluid" title="NyanChat">
-                </a>
-            </div>
-            <div class="col-12 col-md-4 mx-3 mt-4 proj_detials">
-                <a href="http://dtr.kesug.com/?i=2" class="image-container" target="_blank">
-                    <img src="images/dtr.jpg" alt="" class="img-fluid" title="Daily Time Record System">
-                </a>
-            </div>
-            <div class="col-12 col-md-4 mx-3 mt-4 proj_detials">
-                <a href="https://lynxguerba.github.io/Tesda-Final_Project/" class="image-container" target="_blank">
-                    <img src="images/tesda.jpg" alt="" class="img-fluid" title="Cloning Website | TESDA">
-                </a>
-            </div>
-
-            <div class="col-12 col-md-4 mx-3 mt-4 proj_detials">
-                <a href="http://oop-crud.kesug.com/?i=1" class="image-container" target="_blank">
-                    <img src="images/crud1.jpg" alt="" class="img-fluid" title="CRUD Operation">
-                </a>
-            </div>
-            <div class="col-12 col-md-4 mx-3 mt-4 proj_detials">
-                <a href="https://lynxguerba.github.io/CalulatorByDinno/" class="image-container" target="_blank">
-                    <img src="images/calculator.jpg" alt="" class="img-fluid" title="Calculator">
-                </a>
-            </div>
-            <div class="col-12 col-md-4 mx-3 mt-4 proj_detials">
-                <a href="https://lynxguerba.github.io/Assessment/" class="image-container" target="_blank">
-                    <img src="images/portfolio.jpg" alt="" class="img-fluid" title="Portfolio Assessment">
-                </a>
-            </div>
-            <div class="col-12 col-md-4 mx-3 mt-4 proj_detials">
-                <a href="https://github.com/Lynxguerba/Inventory.git" class="image-container" target="_blank">
-                    <img src="images/print.jpg" alt="" class="img-fluid" title="Inventory System">
-                </a>
-            </div>
-            <div class="col-12 col-md-4 mx-3 mt-4 proj_detials">
-                <a href="http://guerba-css-background.kesug.com/?i=2" class="image-container" target="_blank">
-                    <img src="images/css_background.jpg" alt="" class="img-fluid" title="CSS Linear Gradient Background Generator">
-                </a>
-            </div>
-            <div class="col-12 col-md-4 mx-3 mt-4 proj_detials">
-                <a href="https://sites.google.com/dnsc.edu.ph/group4site/home" class="image-container" target="_blank">
-                    <img src="images/fashion.jpg" alt="" class="img-fluid" title="Google Site | Fashion Group 4">
-                </a>
-            </div>
-
-
-            <hr style="border: none; height: 20px">
-        </div>
-
+       
 
 
     </div>
 
 </div>
+</div>
+
+<div class="container-fluid main_projects">
+    <div class="container">
+       
+        <hr style="border: none; height: 20px">
+        <div class="row justify-content-center reveal mt-5">
+            <div class="col-12 col-md-4 mx-1 mt-2 proj_detials">
+                <img src="images/nyan.png" alt="proj_img" class="img-fluid" title="NyanChat">
+                <div class="proj_content d-grid">
+                    <p class="text-light h5 fw-bold" style="line-height: .5">Nyan Chat</p>
+                    <p class="text-light">A Web App allows user to interact on other users. Just like messenger application platform.</p>
+                    <a href="http://nyanchat.great-site.net/src/frontend/login.php"  target="_blank">
+                        <button type="button" class="btn btn-outline-secondary">View</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-1 mt-2 proj_detials">
+                <img src="images/dtr.jpg" alt="proj_img" class="img-fluid" title="NyanChat">
+                <div class="proj_content d-grid">
+                    <p class="text-light h5 fw-bold" style="line-height: .5">Daily Time Record</p>
+                    <p class="text-light">A web tool, is the process of monitoring and organizing time information.</p>
+                    <a href="http://dtr.kesug.com/?i=2"  target="_blank">
+                        <button type="button" class="btn btn-outline-secondary">View</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-1 mt-2 proj_detials">
+                <img src="images/tesda.jpg" alt="proj_img" class="img-fluid" title="NyanChat">
+                <div class="proj_content d-grid">
+                    <p class="text-light h5 fw-bold" style="line-height: .5">Cloning Website</p>
+                    <p class="text-light">1st Year Project, cloning website improving basic Html, Css and Javascript skills.</p>
+                    <a href="https://lynxguerba.github.io/Tesda-Final_Project/"  target="_blank">
+                        <button type="button" class="btn btn-outline-secondary">View</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-1 mt-2 proj_detials">
+                <img src="images/crud1.jpg" alt="proj_img" class="img-fluid" title="NyanChat">
+                <div class="proj_content d-grid">
+                    <p class="text-light h5 fw-bold" style="line-height: .5">CRUD Operation</p>
+                    <p class="text-light">An Assignment Activity, where system  refers to a set of basic function for managing data in a database.</p>
+                    <a href="http://oop-crud.kesug.com/?i=1"  target="_blank">
+                        <button type="button" class="btn btn-outline-secondary">View</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-1 mt-2 proj_detials">
+                <img src="images/calculator.jpg" alt="proj_img" class="img-fluid" title="NyanChat">
+                <div class="proj_content d-grid">
+                    <p class="text-light h5 fw-bold" style="line-height: .5">Calculator</p>
+                    <p class="text-light">It is for fun project, it helps me to understanding the basic concept of programming and arithmetic operation.</p>
+                    <a href="https://lynxguerba.github.io/CalulatorByDinno/"  target="_blank">
+                        <button type="button" class="btn btn-outline-secondary">View</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-1 mt-2 proj_detials">
+                <img src="images/portfolio.jpg" alt="proj_img" class="img-fluid" title="NyanChat">
+                <div class="proj_content d-grid">
+                    <p class="text-light h5 fw-bold" style="line-height: .5">Basic Portfolio</p>
+                    <p class="text-light">1st year Activity Assessment, where we allow to build a simple Portfolio.</p>
+                    <a href="https://lynxguerba.github.io/Assessment/"  target="_blank">
+                        <button type="button" class="btn btn-outline-secondary">View</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-1 mt-2 proj_detials">
+                <img src="images/print.jpg" alt="proj_img" class="img-fluid" title="NyanChat">
+                <div class="proj_content d-grid">
+                    <p class="text-light h5 fw-bold" style="line-height: .5">Inventory System</p>
+                    <p class="text-light">A tool used to track and manage goods and materials within a business.</p>
+                    <a href="https://github.com/Lynxguerba/Inventory.git"  target="_blank">
+                        <button type="button" class="btn btn-outline-secondary">View</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-1 mt-2 proj_detials">
+                <img src="images/css_background.jpg" alt="proj_img" class="img-fluid" title="NyanChat">
+                <div class="proj_content d-grid">
+                    <p class="text-light h5 fw-bold" style="line-height: .5">CSS Linear Gradient Background Generator</p>
+                    <p class="text-light">A tool that allows users to create linear gradient backgrounds without to write CSS code manually.</p>
+                    <a href="http://guerba-css-background.kesug.com/?i=2"  target="_blank">
+                        <button type="button" class="btn btn-outline-secondary">View</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mx-1 mt-2 proj_detials">
+                <img src="images/fashion.jpg" alt="proj_img" class="img-fluid" title="NyanChat">
+                <div class="proj_content d-grid">
+                    <p class="text-light h5 fw-bold" style="line-height: .5">Google Site Project</p>
+                    <p class="text-light">1st year Project where we experience hands-on web design and development, to enhancing technical skills.</p>
+                    <a href="https://sites.google.com/dnsc.edu.ph/group4site/home"  target="_blank">
+                        <button type="button" class="btn btn-outline-secondary">View</button>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <hr style="border: none; height: 40px">
+    
+    </div>
 </div>
